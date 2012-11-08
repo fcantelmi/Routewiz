@@ -12,8 +12,9 @@ public class RouteWiz extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_route_wiz);
         
-        WebView myWebView = (WebView) findViewById(R.id.webview);
-        myWebView.loadUrl("http://www.routewiz.net/");
+        WebView webView = (WebView) findViewById(R.id.webview);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.loadUrl("http://www.routewiz.net/");
     }
 
     @Override
