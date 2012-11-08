@@ -14,7 +14,7 @@ public class RouteWiz extends Activity {
         
         WebView webView = (WebView) findViewById(R.id.webview);
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http://www.routewiz.net/");
+        webView.loadUrl("http://ec2-50-19-189-77.compute-1.amazonaws.com/track/loginFrame.html");
     }
 
     @Override
